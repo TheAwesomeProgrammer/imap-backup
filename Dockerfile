@@ -15,5 +15,6 @@ ENV PATH ./bin/stubs:$PATH
 WORKDIR /app
 
 RUN gem install bundler --version=2.1.4
+RUN gem install imap-backup
 
 ENTRYPOINT ["bash"]
